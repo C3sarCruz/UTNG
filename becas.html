@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTNG|Alumnos</title>
+    <link rel="stylesheet" href="becas.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;400;700;900&family=Nunito+Sans:opsz,wght@6..12,200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="/logoUTNG.png" class="logo">
+        <p>UNIVERSIDAD TECNNOLOGICA DEL NORTE DE GUANAJUATO</p>
+        <dvi class="container">
+            <input type="text" placeholder="Buscar...">
+            <div class="search"></div>
+            </div>
+    </header>
+    <div class="menu2">
+        <section>
+            <ul class="txtmenu">
+                <th class="txt">
+                    <p style="text-align: center; color: #fff; font-size: 1.8rem; font-weight: bold; top: 0;">
+                        TEMAS
+                    </p>
+                </th>
+                <hr style="width: 100%; border: 1px solid #000000; margin-top: 20px;">
+                <li class="txt">
+                    <a href="/eventos.html" class="txt">Eventos</a>
+                </li>
+                <li class="txt">
+                    <a href="/becas.html" class="txt">Becas</a>
+                </li>
+                <li class="txt">
+                    <a href="videos.html" class="txt">En vivos</a>
+                </li>
+                <li class="txt">
+                    <a href="/titulacion.html" class="txt">Titulacion</a>
+                </li>
+                <li class="txt">
+                    <a href="/Nosotros.html" class="txt">Nosotros</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="contenido">
+        <h1 class="mt-4">Becas</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 style="text-align: center;">Externas</h4>
+                <h5>Becas disponibles como apoyo del estado de Guanajuato a los estudiantes de diferentes niveles.</h5>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio Social Profesional</h5>
+                        <p class="card-text" style="text-align: justify;">En la modalidad de Servicio Social Profesional
+                            se otorga el apoyo económico dirigido a personas jóvenes que sean egresadas o estén cursando
+                            el nivel superior en el estado de Guanajuato.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#serviciosoc">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h4 style="text-align: center;">Internas</h4>
+                <h5>Apoyos internos otorgados y aprobados como ayuda a los universitarios con las necesidades que los
+                    pueden limitar a su educación.</h5>
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Apoyo Alimenticio</h5>
+                        <p class="card-text">Consiste en la ministración de una comida al día en la Universidad a los
+                            alumnos de la modalidad escolarizada, los solicitantes deberán entregar el formato de
+                            canalización del tutor académico para tener derecho a la solicitud del apoyo. </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#alimenticio">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovación y Emprendimiento</h5>
+                        <p class="card-text" style="text-align: justify;">Ejercicio Fiscal de 2023, convoca a las y los
+                            jóvenes del Estado de
+                            Guanajuato, interesados en vivir una experiencia de movilidad nacional, para fortalecer sus
+                            habilidades en materia
+                            de Innovación y emprendimiento. </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#innovacion">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Apoyo deportivo y cultural</h5>
+                        <p class="card-text">Consiste en la exención del 100% en el pago de la inscripción cuatrimestral
+                            para los alumnos del primero al quinto cuatrimestre y del 50% para los alumnos del séptimo
+                            al onceavo cuatrimestre, que sean seleccionados para representar a la Universidad en eventos
+                            deportivos o culturales oficiales. </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#deportivo">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Educación Superior</h5>
+                        <p class="card-text" style="text-align: justify;">Estudiantes Guanajuatenses de nivel TSU y
+                            licenciatura de escuelas públicas o privadas, con reconocimiento de validez oficial de
+                            estudios de la Secretaría de Educación Pública o de la Secretaría de Educación de
+                            Guanajuato, así como en universidades Autónomas, y que tengan alguna desventaja social o
+                            vulnerabilidad. </p>
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-success" data-bs-toggle="modal" href="https://juventudesgto.guanajuato.gob.mx/index.php/educacion-superior-2023/"
+                            data-bs-target="https://juventudesgto.guanajuato.gob.mx/index.php/educacion-superior-2023/">
+                            Ver más
+                        </button> -->
+                        <a href="https://juventudesgto.guanajuato.gob.mx/index.php/educacion-superior-2023/"
+                            class="btn btn-success">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Apoyo por rendimiento academico</h5>
+                        <p class="card-text">Consiste en la exención de un porcentaje del pago de la inscripción
+                            cuatrimestral a los alumnos de la Universidad y se establece conforme a los siguientes
+                            cuatrimestres, promedios y porcentajes de excención</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fondo JuventudEs GTO</h5>
+                        <p class="card-text" style="text-align: justify;">El Gobierno del Estado de Guanajuato a través
+                            de Fondos Guanajuato y en colaboración con el Instituto para el Desarrollo y Atención a las
+                            Juventudes del Estado de Guanajuato, JuventudEsGTO invitan a las juventudes guanajuatenses a
+                            participar en la convocatoria Fondosón. </p>
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fondogto">
+                            Ver más
+                        </button> -->
+                        <a href="becas2.html" class="btn btn-success">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Apoyo por necesidad apremiante</h5>
+                        <p class="card-text">Consiste en la ministración mensual no reembolsable de una cantidad de
+                            dinero, a los alumnos con promedio mínimo de ocho y necesidad económica extrema que ponga en
+                            riesgo la continuidad de sus estudios en la Universidad. </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+
+
+
+
+
+
+        <!-- ///////////////////////////////////////   MODALS   ////////////////////////////////////////////////// -->
+        <!-- Modal Beca externa Fondos GTO-->
+        <div class="modal fade" id="fondogto" tabindex="-1" aria-labelledby="fondogto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fondogto">Fondo JuventudEs GTO</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify;">
+                        Lo sentimos, esta beca ya no esta disponible, su fecha de convocatoria abierta expiro el
+                        30/septiembre/2023.
+                        Esta atento para la siguiente versión abierta y postulase para obtener une beca de apoyo del
+                        estado de Guanajuato.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Beca Interna Apoyo Alimenticio-->
+        <div class="modal fade" id="alimenticio" tabindex="-1" aria-labelledby="fondogto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fondogto">Apoyo Alimenticio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify;">
+                        Lo sentimos, esta beca ya no esta disponible, su fecha de convocatoria abierta expiro el
+                        30/septiembre/2023.
+                        Este antento a las actualizaciones de convocatorias internas y en contacto con su tutor.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Beca externa Fondos GTO-->
+        <div class="modal fade" id="innovacion" tabindex="-1" aria-labelledby="fondogto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fondogto">Innovación y Emprendimiento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify;">
+                        Lo sentimos, esta beca ya no esta disponible, su fecha de convocatoria abierta expiro el
+                        30/septiembre/2023.
+                        Esta atento para la siguiente versión abierta y postulase para obtener une beca de apoyo del
+                        estado de Guanajuato.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Beca externa Fondos GTO-->
+        <div class="modal fade" id="deportivo" tabindex="-1" aria-labelledby="fondogto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fondogto">Apoyo deportivo y cultural</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify;">
+                        Lo sentimos, esta beca ya no esta disponible, su fecha de convocatoria abierta expiro el
+                        30/septiembre/2023.
+                        Este antento a las actualizaciones de convocatorias internas y en contacto con su tutor.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Beca externa Fondos GTO-->
+        <div class="modal fade" id="serviciosoc" tabindex="-1" aria-labelledby="fondogto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fondogto">Servicio Social Profesional</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify;">
+                        Lo sentimos, esta beca ya no esta disponible, su fecha de convocatoria abierta expiro el
+                        30/septiembre/2023.
+                        Esta atento para la siguiente versión abierta y postulase para obtener une beca de apoyo del
+                        estado de Guanajuato.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<!-- <footer>
+
+</footer> -->
+
+</html>

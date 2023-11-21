@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+header {
+    top: 0;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    height: 15vh;
+    background-color: #2a4dbd;
+    z-index: 1;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+
+.logo {
+    width: 75px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    left: 0;
+    margin: 20px;
+}
+
+
+/*********Buscador*/
+.container {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.container .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 40%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container .search:hover {
+    cursor: pointer;
+}
+
+.container .search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 16px;
+    right: 0;
+    bottom: 0;
+    left: 12px;
+    width: 12px;
+    height: 3px;
+    background: #000000;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+.container .search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    transition: all 0.5s;
+}
+
+.container input {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: rgb(255, 255, 255);
+    color: rgb(61, 61, 61);
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+}
+
+.container input:hover {
+    cursor: pointer;
+}
+
+.container input:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+
+.container input:focus~.search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+}
+
+.container input:focus~.search::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+    background: #fff;
+}
+
+.container input:focus~.search::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: #fff;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.container input::placeholder {
+    color: #000000;
+    opacity: 0.5;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+/*********Fin Buscador*/
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    max-height: 1000px;
+    width: 100%;
+    background: linear-gradient(-45deg, #ffffff, #f5fffd, #fff, #cdd8ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.contenido {
+    padding-top: 15vh;
+    padding-left: 15vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    height: auto;
+    max-height: fit-content;
+    width: 100%;
+}
+
+.menu2 {
+    top: 0;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 15vw;
+    background-color: #00a887;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+footer {
+    top: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #646261;
+}
+
+section {
+    margin-top: 20vh;
+}
+
+.txtmenu {
+    display: block;
+    padding: 30px;
+    list-style: none;
+
+
+}
+
+.txt {
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.txt:hover {
+    color: #a1a1a1;
+}
+
+.carrusel{
+    display: block;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+table td {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.valores{
+    display: block;
+    position: relative;
+    justify-content: center;
+}
